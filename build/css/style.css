@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+input,
+input:focus {
+  outline: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+  box-shadow: none;
+}
+a,
+a:hover,
+a:focus,
+button,
+button,
+button:focus {
+  outline: none;
+  text-decoration: none;
+}
+.clear {
+  clear: both;
+}
+header {
+  padding-top: 32px;
+  font-size: 0;
+}
+header .logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+header .logo-text {
+  margin-left: 2%;
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+header .logo-text span {
+  font-size: 12px;
+  color: #3f5ea0;
+}
+header .logo-text p {
+  margin-bottom: 0;
+  font: 26px/26px 'PT Serif', serif;
+  color: #3f5ea0;
+}
+header .right-header {
+  padding-top: 11px;
+  text-align: right;
+}
+header .question-button {
+  margin-right: 8%;
+  display: inline-block;
+  vertical-align: middle;
+}
+header .question-button button {
+  width: 166px;
+  height: 35px;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  color: #675613;
+  text-transform: uppercase;
+  background-color: #ffcc00;
+}
+header .header-phone {
+  display: inline-block;
+  vertical-align: middle;
+}
+header .header-phone svg {
+  margin-right: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 29px;
+  fill: #3f5ea0;
+}
+header .header-phone p {
+  margin-bottom: 0;
+  margin-top: 6px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 15px;
+  color: #797369;
+  letter-spacing: -0.1px;
+}
+header .header-phone p span {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  color: #3a3835;
+  letter-spacing: -0.4px;
+}
+header .menu {
+  margin-top: 27px;
+  background-image: linear-gradient(to right, #1d9bfc 70%, #248bdb 30%);
+}
+header .menu ul {
+  margin-bottom: 0;
+  text-align: justify;
+}
+header .menu ul::after {
+  display: inline-block;
+  width: 100%;
+  content: '';
+}
+header .menu li {
+  display: inline-block;
+}
+header .menu li a {
+  display: block;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font: 14px 'PT Serif', serif;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: transparent;
+  transition: background 300ms linear;
+}
+header .menu li a:hover {
+  background-color: #248bdb;
+}
+header .menu #search {
+  position: relative;
+  padding-top: 12px;
+  padding-left: 10%;
+  padding-bottom: 13px;
+  background-color: #248bdb;
+}
+header .menu #search input[type=text] {
+  padding-top: 8px;
+  max-width: 286px;
+  width: 100%;
+  height: 27px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  border-bottom: 1px rgba(161, 169, 187, 0.5) solid;
+}
+header .menu #search input[type=submit] {
+  position: absolute;
+  right: 0;
+  top: 13px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/search.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+}
+.content .banner {
+  position: relative;
+  padding-top: 34px;
+  width: 100%;
+  height: 606px;
+  background-image: url(../img/femida.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content .banner p.title-block {
+  font-size: 16px;
+  line-height: 32px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+}
+.content .banner p.title-block span {
+  display: block;
+  font-size: 32px;
+  line-height: normal;
+  font-family: 'PT Serif', serif;
+}
+.content .banner__text {
+  padding-top: 37px;
+  padding-right: 22px;
+  padding-left: 15px;
+  padding-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.content .banner__text ul {
+  margin-bottom: 0;
+  box-sizing: border-box;
+}
+.content .banner__text ul.services {
+  font-size: 0;
+  margin-top: 45px;
+}
+.content .banner__text ul.services li {
+  list-style-type: none;
+}
+.content .banner__text ul.services li:not(:last-child) {
+  margin-bottom: 47px;
+}
+.content .banner__text ul.services .svg {
+  margin-right: 4.3%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 54px;
+  text-align: center;
+}
+.content .banner__text ul.services svg {
+  fill: #ffcc00;
+}
+.content .banner__text ul.services svg.reliability {
+  width: 41px;
+  height: 48px;
+}
+.content .banner__text ul.services svg.confidence {
+  width: 54px;
+  height: 46px;
+}
+.content .banner__text ul.services svg.proff {
+  width: 38px;
+  height: 49px;
+}
+.content .banner__text ul.services span {
+  vertical-align: middle;
+  font: 18px 'PT Serif', serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+.content .banner__text ul.type-services {
+  padding-left: 40px;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+}
+.content .banner__text ul.type-services li {
+  padding-left: 60px;
+  list-style-type: none;
+  font: 24px 'PT Serif', serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-image: url(../img/check.svg);
+  background-size: 30px 32px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+.content .banner__text ul.type-services li:not(:last-child) {
+  margin-bottom: 34px;
+}
+.content .banner__text a.all-services {
+  margin-left: 14%;
+  margin-top: 2px;
+  margin-bottom: 28px;
+  padding-top: 16px;
+  display: block;
+  width: 147px;
+  height: 45px;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #675613;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ffcc00;
+}
+.content .banner__form {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.content .banner__form form input[type=text] {
+  padding-left: 34px;
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  color: #fff;
+  border: 1px rgba(255, 255, 255, 0.3) solid;
+  box-sizing: border-box;
+  background-color: transparent;
+  background-position: 2% 50%;
+  background-size: 19px 22px;
+  background-repeat: no-repeat;
+}
+.content .banner__form form input[type=text].name {
+  background-image: url(../img/man.svg);
+}
+.content .banner__form form input[type=text].phone {
+  background-image: url(../img/phone-white.svg);
+}
+.content .banner__form form input[type=submit] {
+  width: 100%;
+  height: 35px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #675613;
+  background-color: #ffcc00;
+  border: none;
+}

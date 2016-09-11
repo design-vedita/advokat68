@@ -1,0 +1,43 @@
+mixin banner()
+    .banner
+        .container
+            .row
+                .col-md-4
+                    .banner__text
+                        p.title-block   Тамбовская городская
+                            span    Коллегия адвокатов
+                        ul.services
+                            li
+                                .svg
+                                    +svg('reliability')
+                                span    Надёжность
+                            li
+                                .svg
+                                    +svg('confidence')
+                                span    Доверие
+                            li
+                                .svg
+                                    +svg('proff')
+                                span    Профессионализм
+                .col-md-7.col-md-offset-1
+                    .banner__text
+                        ul.type-services
+                            li  Защита по уголовным делам
+                            li  Защита по гражданским делам
+                            li  Административные дела
+                            li  Арбитражные дела
+                            li  Консультации
+                        a(href="javascript:void(0)").all-services  Все услуги
+        .banner__form
+            .container
+                .row
+                    form
+                        .col-md-12
+                            .row
+                                .col-md-5
+                                    input(type="text" placeholder="Ваше имя").name
+                                .col-md-5
+                                    input(type="text" placeholder="Телефон").phone
+                                .col-md-2
+                                    input(type="submit" value="Заказать звонок")
+

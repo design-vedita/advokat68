@@ -1,0 +1,25 @@
+include includes/head
+include includes/header
+include includes/banner
+include includes/footer
+include includes/scripts
+include includes/mixins
+doctype html
+
+html(lang="en")
+    head
+        +head('Главная')
+    body
+        include blocks/svg.html
+
+        // Шапка сайта
+        +header('index')
+        //
+
+        .content
+            +banner()
+
+        footer
+            +footer()
+
+        +scripts()

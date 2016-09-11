@@ -1,0 +1,14 @@
+- var menu = ['Главная','О коллегии','Адвокаты','Услуги','Практика','Вопрос-ответ','Контакты']
+
+mixin menu()
+    .menu
+        .container
+            .row
+                .col-md-8
+                    ul
+                        each li in menu
+                            li: a(href="javascript:void(0)")    #{li}
+                .col-md-4
+                    form#search
+                        input(type="text" placeholder="Поиск")
+                        input(type="submit")

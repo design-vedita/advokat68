@@ -1,0 +1,28 @@
+include  menu
+
+mixin header(type)
+   header(class="#{type}")
+      .container
+         .row
+            .col-md-5
+               .logo
+                  a(href="javascript:void(0)")
+                     img(src="../img/logo.png")
+               .logo-text
+                  span  Тамбовская городская
+                  p  Коллегия адвокатов
+            .col-md-5.col-md-offset-2
+               .right-header
+                  .question-button
+                     button   Задать вопрос
+                  .header-phone
+                     +svg('phone')
+                     p Тамбов, ул. Советская, 12
+                        span  +7 (4752) 79-09-92
+      +menu
+
+
+
+
+
+
