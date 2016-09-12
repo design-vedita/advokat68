@@ -152,7 +152,7 @@ header {
 			position: relative;
 			padding-top: 12px;
 			padding-left: 10%;
-			padding-bottom: 13px;
+			padding-bottom: 14px;
 			background-color: @dark-blue;
 
 			input {
@@ -191,10 +191,8 @@ header {
 .content {
 
 	.banner {
-		position: relative;
 		padding-top: 34px;
 		width: 100%;
-		height: 606px;
 		background-image: url(../img/femida.jpg);
 		background-size: cover;
 		background-position: center;
@@ -319,9 +317,7 @@ header {
 		}
 
 		&__form {
-			position: absolute;
-			left: 0;
-			bottom: 0;
+			margin-top: 16px;
 			padding-top: 26px;
 			padding-bottom: 26px;
 			width: 100%;
@@ -365,6 +361,357 @@ header {
 					}
 				}
 			}
+		}
+	}
+
+	.utp {
+		margin-top: 49px;
+
+		svg {
+			fill: @blue;
+
+			&.reliability {
+				width: 41px;
+				height: 48px;
+			}
+
+			&.confidence {
+				width: 54px;
+				height: 46px;
+			}
+
+			&.proff {
+				width: 38px;
+				height: 52px;
+			}
+		}
+
+		&__item {
+			text-align: center;
+
+			p {
+
+				&.title {
+					margin-top: 13px;
+					margin-bottom: 6px;
+					font: 18px @pt;
+					color: @utp-title;
+					text-transform: uppercase;
+				}
+
+				&.subtitle {
+					font-size: 14px;
+					line-height: 24px;
+					color: @utp-subtitle;
+				}
+			}
+		}
+
+		&__bottom {
+			position: relative;
+			margin-top: 19px;
+			text-align: center;
+
+			svg {
+				width: 43px;
+				height: 23px;
+			}
+
+			&::before {
+				position: absolute;
+				left: calc(~'50% - 295px');
+				top: 50%;
+				max-width: 262px;
+				width: 100%;
+				height: 1px;
+				background-color: @venzel-color;
+				content: '';
+			}
+
+			&::after {
+				position: absolute;
+				right: calc(~'50% - 295px');
+				top: 50%;
+				max-width: 262px;
+				width: 100%;
+				height: 1px;
+				background-color: @venzel-color;
+				content: '';
+			}
+		}
+	}
+
+	.description {
+		position: relative;
+		margin-top: 26px;
+		text-align: center;
+
+		&::before {
+			position: absolute;
+			left: calc(~'50% - 131px');
+			bottom: 0;
+			display: block;
+			width: 262px;
+			height: 1px;
+			background-color: @venzel-color;
+			content: '';
+		}
+
+		p {
+
+			&.title {
+				margin-bottom: 3px;
+				font: 20px/30px @pt;
+				color: @desc-title;
+				text-transform: uppercase;
+			}
+
+			&.subtitle {
+				font-size: 16px;
+				line-height: 34px;
+				color: @utp-subtitle;
+			}
+		}
+	}
+
+	.lawyers {
+		margin-top: 54px;
+
+		.item {
+			margin-bottom: 35px;
+		}
+
+		p {
+			&.title {
+				padding-bottom: 17px;
+				font: 30px/30px @pt;
+				color: @desc-title;
+				text-transform: uppercase;
+				text-align: center;
+				position: relative;
+
+				&::before {
+					position: absolute;
+					left: calc(~'50% - 50px');
+					bottom: 0;
+					display: block;
+					width: 100px;
+					height: 4px;
+					background-color: @blue;
+					content: '';
+				}
+			}
+
+			&.name {
+				margin-bottom: 0;
+				margin-top: 17px;
+				font: 18px @pt;
+				color: @utp-title;
+				text-transform: uppercase;
+			}
+
+			&.experience {
+				margin-bottom: 0;
+				margin-top: 7px;
+				font-size: 14px;
+				line-height: 24px;
+				font-weight: bold;
+				color: @utp-subtitle;
+			}
+
+			&.phone {
+				font-size: 13px;
+				line-height: 24px;
+				color: @blue;
+				font-weight: 600;
+			}
+		}
+
+		ul {
+			margin-top: 7px;
+			margin-bottom: 25px;
+
+			li {
+				position: relative;
+				padding-left: 17px;
+				list-style-type: none;
+				font-size: 13px;
+				line-height: 24px;
+				color: @utp-subtitle;
+
+				&::before {
+					position: absolute;
+					left: 0;
+					top: 9px;
+					display: block;
+					width: 6px;
+					height: 6px;
+					border-radius: 50%;
+					background-color: @blue;
+					content: '';
+				}
+			}
+		}
+
+		&__list {
+			margin-top: 54px;
+
+		}
+	}
+
+	.index-text {
+		margin-top: 56px;
+
+			p {
+				font-size: 16px;
+				line-height: 30px;
+				color: @utp-subtitle;
+
+				&.title {
+					position: relative;
+					padding-bottom: 14px;
+					font: 30px/30px @pt;
+					color: @desc-title;
+					text-transform: uppercase;
+
+					&::before {
+						position: absolute;
+						left: 0;
+						bottom: 0;
+						display: block;
+						width: 100px;
+						height: 4px;
+						background-color: @blue;
+						content: '';
+					}
+				}
+			}
+
+		&__description {
+			margin-top: 29px;
+		}
+
+	}
+}
+
+footer {
+	margin-top: 59px;
+	padding-top: 44px;
+	background-color: @footer;
+
+	.logo {
+		display: inline-block;
+		vertical-align: middle;
+
+		&-text {
+			margin-top: -9px;
+			margin-left: 2%;
+			display: inline-block;
+			vertical-align: middle;
+			text-transform: uppercase;
+
+			span {
+				font-size: 12px;
+				color: @white;
+			}
+
+			p {
+				margin-bottom: 0;
+				font: 26px/26px @pt;
+				color: @white;
+			}
+		}
+	}
+
+	ul {
+		margin-top: -5px;
+		font-size: 0;
+
+		li {
+			display: inline-block;
+			width: 50%;
+
+			a {
+				font: 14px/30px @pt;
+				color: @white;
+				text-transform: uppercase;
+
+				&:hover {
+					color: @white;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	.footer-phone {
+		padding-top: 6px;
+		display: inline-block;
+		vertical-align: middle;
+		text-align: right;
+
+		svg {
+			margin-right: 14px;
+			display: inline-block;
+			vertical-align: middle;
+			width: 25px;
+			height: 29px;
+			fill: @white;
+		}
+
+		p {
+			margin-bottom: 0;
+			margin-top: 6px;
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 12px;
+			line-height: 15px;
+			color: @yellow;
+			letter-spacing: -.1px;
+
+			span {
+				display: block;
+				font-size: 18px;
+				line-height: 24px;
+				font-weight: 600;
+				color: @white;
+				letter-spacing: -.4px;
+			}
+		}
+	}
+
+	.developer {
+		margin-top: 31px;
+		padding-top: 11px;
+		padding-bottom: 11px;
+		background-color: @developer-bg;
+
+		p {
+
+			&.copyright {
+				margin-bottom: 0;
+				font-size: 14px;
+				line-height: 26px;
+				color: @copyright;
+			}
+		}
+
+		span {
+			vertical-align: middle;
+			font-size: 14px;
+			line-height: 12px;
+			color: @copyright;
+		}
+
+		svg {
+			display: inline-block;
+			vertical-align: middle;
+			width: 107px;
+			height: 28px;
+			fill: @white;
+		}
+
+		.footer-dev {
+			text-align: right;
 		}
 	}
 }

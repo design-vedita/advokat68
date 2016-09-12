@@ -131,7 +131,7 @@ header .menu #search {
   position: relative;
   padding-top: 12px;
   padding-left: 10%;
-  padding-bottom: 13px;
+  padding-bottom: 14px;
   background-color: #248bdb;
 }
 header .menu #search input[type=text] {
@@ -160,10 +160,8 @@ header .menu #search input[type=submit] {
   border: none;
 }
 .content .banner {
-  position: relative;
   padding-top: 34px;
   width: 100%;
-  height: 606px;
   background-image: url(../img/femida.jpg);
   background-size: cover;
   background-position: center;
@@ -266,9 +264,7 @@ header .menu #search input[type=submit] {
   background-color: #ffcc00;
 }
 .content .banner__form {
-  position: absolute;
-  left: 0;
-  bottom: 0;
+  margin-top: 16px;
   padding-top: 26px;
   padding-bottom: 26px;
   width: 100%;
@@ -302,4 +298,293 @@ header .menu #search input[type=submit] {
   color: #675613;
   background-color: #ffcc00;
   border: none;
+}
+.content .utp {
+  margin-top: 49px;
+}
+.content .utp svg {
+  fill: #3f5ea0;
+}
+.content .utp svg.reliability {
+  width: 41px;
+  height: 48px;
+}
+.content .utp svg.confidence {
+  width: 54px;
+  height: 46px;
+}
+.content .utp svg.proff {
+  width: 38px;
+  height: 52px;
+}
+.content .utp__item {
+  text-align: center;
+}
+.content .utp__item p.title {
+  margin-top: 13px;
+  margin-bottom: 6px;
+  font: 18px 'PT Serif', serif;
+  color: #343434;
+  text-transform: uppercase;
+}
+.content .utp__item p.subtitle {
+  font-size: 14px;
+  line-height: 24px;
+  color: #6a6a6a;
+}
+.content .utp__bottom {
+  position: relative;
+  margin-top: 19px;
+  text-align: center;
+}
+.content .utp__bottom svg {
+  width: 43px;
+  height: 23px;
+}
+.content .utp__bottom::before {
+  position: absolute;
+  left: calc(50% - 295px);
+  top: 50%;
+  max-width: 262px;
+  width: 100%;
+  height: 1px;
+  background-color: #9a9a9a;
+  content: '';
+}
+.content .utp__bottom::after {
+  position: absolute;
+  right: calc(50% - 295px);
+  top: 50%;
+  max-width: 262px;
+  width: 100%;
+  height: 1px;
+  background-color: #9a9a9a;
+  content: '';
+}
+.content .description {
+  position: relative;
+  margin-top: 26px;
+  text-align: center;
+}
+.content .description::before {
+  position: absolute;
+  left: calc(50% - 131px);
+  bottom: 0;
+  display: block;
+  width: 262px;
+  height: 1px;
+  background-color: #9a9a9a;
+  content: '';
+}
+.content .description p.title {
+  margin-bottom: 3px;
+  font: 20px/30px 'PT Serif', serif;
+  color: #3b3b3b;
+  text-transform: uppercase;
+}
+.content .description p.subtitle {
+  font-size: 16px;
+  line-height: 34px;
+  color: #6a6a6a;
+}
+.content .lawyers {
+  margin-top: 54px;
+}
+.content .lawyers .item {
+  margin-bottom: 35px;
+}
+.content .lawyers p.title {
+  padding-bottom: 17px;
+  font: 30px/30px 'PT Serif', serif;
+  color: #3b3b3b;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+}
+.content .lawyers p.title::before {
+  position: absolute;
+  left: calc(50% - 50px);
+  bottom: 0;
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #3f5ea0;
+  content: '';
+}
+.content .lawyers p.name {
+  margin-bottom: 0;
+  margin-top: 17px;
+  font: 18px 'PT Serif', serif;
+  color: #343434;
+  text-transform: uppercase;
+}
+.content .lawyers p.experience {
+  margin-bottom: 0;
+  margin-top: 7px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #6a6a6a;
+}
+.content .lawyers p.phone {
+  font-size: 13px;
+  line-height: 24px;
+  color: #3f5ea0;
+  font-weight: 600;
+}
+.content .lawyers ul {
+  margin-top: 7px;
+  margin-bottom: 25px;
+}
+.content .lawyers ul li {
+  position: relative;
+  padding-left: 17px;
+  list-style-type: none;
+  font-size: 13px;
+  line-height: 24px;
+  color: #6a6a6a;
+}
+.content .lawyers ul li::before {
+  position: absolute;
+  left: 0;
+  top: 9px;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #3f5ea0;
+  content: '';
+}
+.content .lawyers__list {
+  margin-top: 54px;
+}
+.content .index-text {
+  margin-top: 56px;
+}
+.content .index-text p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #6a6a6a;
+}
+.content .index-text p.title {
+  position: relative;
+  padding-bottom: 14px;
+  font: 30px/30px 'PT Serif', serif;
+  color: #3b3b3b;
+  text-transform: uppercase;
+}
+.content .index-text p.title::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #3f5ea0;
+  content: '';
+}
+.content .index-text__description {
+  margin-top: 29px;
+}
+footer {
+  margin-top: 59px;
+  padding-top: 44px;
+  background-color: #4966a5;
+}
+footer .logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+footer .logo-text {
+  margin-top: -9px;
+  margin-left: 2%;
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+footer .logo-text span {
+  font-size: 12px;
+  color: #fff;
+}
+footer .logo-text p {
+  margin-bottom: 0;
+  font: 26px/26px 'PT Serif', serif;
+  color: #fff;
+}
+footer ul {
+  margin-top: -5px;
+  font-size: 0;
+}
+footer ul li {
+  display: inline-block;
+  width: 50%;
+}
+footer ul li a {
+  font: 14px/30px 'PT Serif', serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+footer ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+footer .footer-phone {
+  padding-top: 6px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+}
+footer .footer-phone svg {
+  margin-right: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 29px;
+  fill: #fff;
+}
+footer .footer-phone p {
+  margin-bottom: 0;
+  margin-top: 6px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffcc00;
+  letter-spacing: -0.1px;
+}
+footer .footer-phone p span {
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -0.4px;
+}
+footer .developer {
+  margin-top: 31px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  background-color: #3d5280;
+}
+footer .developer p.copyright {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 26px;
+  color: #a3afca;
+}
+footer .developer span {
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 12px;
+  color: #a3afca;
+}
+footer .developer svg {
+  display: inline-block;
+  vertical-align: middle;
+  width: 107px;
+  height: 28px;
+  fill: #fff;
+}
+footer .developer .footer-dev {
+  text-align: right;
 }

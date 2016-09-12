@@ -1,6 +1,10 @@
 include includes/head
 include includes/header
 include includes/banner
+include includes/utp
+include includes/description
+include includes/lawyers
+include includes/index-text
 include includes/footer
 include includes/scripts
 include includes/mixins
@@ -19,7 +23,14 @@ html(lang="en")
         .content
             +banner()
 
-        footer
-            +footer()
+            +utp()
+
+            +description()
+
+            +lawyers()
+
+            +index-text()
+
+        +footer()
 
         +scripts()

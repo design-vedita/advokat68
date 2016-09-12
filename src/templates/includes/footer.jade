@@ -1,6 +1,37 @@
 
 mixin footer()
-    .container
+    footer
+        .container
+            .row
+                .col-md-5
+                    .logo
+                        img(src="../img/logo-footer.png")
+                    .logo-text
+                        span  Тамбовская городская
+                        p  Коллегия адвокатов
+                .col-md-4
+                    ul
+                        li: a(href="javascript:void(0)")    Главная
+                        li: a(href="javascript:void(0)")    Практика
+                        li: a(href="javascript:void(0)")    О коллегии
+                        li: a(href="javascript:void(0)")    Вопрос-ответ
+                        li: a(href="javascript:void(0)")    Адвокаты
+                        li: a(href="javascript:void(0)")    Контакты
+                        li: a(href="javascript:void(0)")    Услуги
+                .col-md-3.footer-phone
+                    +svg('phone')
+                    p Тамбов, ул. Советская, 12
+                        span  +7 (4752) 79-09-92
+        .developer
+            .container
+                .row
+                    .col-md-3
+                        p.copyright Все права защищены © 2016 г.
+                    .col-md-5.col-md-offset-4.footer-dev
+                        span  Разработка и продвижение сайтов
+                        a(href="http://vedita.ru" target="_blank")
+                            +svg('vedita')
+
 
 
 
