@@ -1,0 +1,25 @@
+include includes/head
+include includes/header
+include includes/breadcrumbs
+include includes/services-list
+include includes/form
+include includes/footer
+include includes/scripts
+include includes/mixins
+
+doctype html
+html(lang="en")
+head
+    +head('Услуги')
+body.inner
+    include blocks/svg.html
+    +header()
+    .content
+        +breadcrumbs()
+
+        +services-list()
+
+        +form()
+
+    +footer()
+    +scripts()
