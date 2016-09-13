@@ -1,3 +1,23 @@
-//
-   Created by nikalun on 13.09.2016.
+include includes/head
+include includes/header
+include includes/breadcrumbs
+include includes/contacts-text
+include includes/form
+include includes/footer
+include includes/scripts
+include includes/mixins
+doctype html
 
+html(lang="en")
+head
+    +head('Контакты')
+body
+    include blocks/svg.html
+    +header()
+    .content
+        +breadcrumbs()
+
+        +contacts-text()
+
+    +footer()
+    +scripts()

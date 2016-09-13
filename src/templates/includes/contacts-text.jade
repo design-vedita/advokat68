@@ -1,3 +1,24 @@
-//
-   Created by nikalun on 13.09.2016.
+mixin contacts-text()
+   .contacts-text
+      .container
+         .row
+            .col-md-12
+               h1 Контакты
+         .contacts-text__block
+            .row
+               .col-md-6.col-sm-6
+                  p.address   г. Москва, Красная площадь, 1
+                  p.phone   8-800-123-45-67
+                  .map
+                     script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=15ysjRl2iBeA4Vg2TeAjIx4Tr-E-ytSx&amp;width=100%&amp;height=375&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true")
 
+               .col-md-6.col-sm-6
+                  form
+                     label.name-label Ваше имя
+                     input(type="text")
+                     label.phone-label Телефон
+                     input(type="phone")
+                     label.text-label Телефон
+                     textarea
+                     input(type="submit")
+                     br.clear

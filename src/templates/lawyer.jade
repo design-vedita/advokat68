@@ -1,26 +1,23 @@
 include includes/head
 include includes/header
 include includes/breadcrumbs
-include includes/question-text
+include includes/single-lawyer
 include includes/form
 include includes/footer
 include includes/scripts
 include includes/mixins
-
 doctype html
 html(lang="en")
 head
-    +head('Вопрос-ответ')
+    +head('Одиночный юрист')
 body.inner
     include blocks/svg.html
     +header()
     .content
-
         +breadcrumbs()
 
-        +question-text()
+        +single-lawyer()
 
         +form()
-
     +footer()
     +scripts()
