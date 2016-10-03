@@ -452,6 +452,32 @@ header {
 				background-color: @venzel-color;
 				content: '';
 			}
+
+			@media (min-width: 320px) and (max-width: 767px) {
+
+				& {
+
+					svg {
+						width: 63px;
+						padding-left: 10px;
+						padding-right: 10px;
+					}
+				}
+
+				&::before {
+					left: 0;
+				}
+
+				&::after {
+					right: 0;
+				}
+
+				svg {
+					position: relative;
+					z-index: 2;
+					background-color: @white;
+				}
+			}
 		}
 	}
 

@@ -373,6 +373,24 @@ header .menu #search input[type=submit] {
   background-color: #9a9a9a;
   content: '';
 }
+@media (min-width: 320px) and (max-width: 767px) {
+  .content .utp__bottom svg {
+    width: 63px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .content .utp__bottom::before {
+    left: 0;
+  }
+  .content .utp__bottom::after {
+    right: 0;
+  }
+  .content .utp__bottom svg {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+  }
+}
 .content .description {
   position: relative;
   margin-top: 26px;
