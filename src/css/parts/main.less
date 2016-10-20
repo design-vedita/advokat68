@@ -30,6 +30,17 @@ button:focus {
 	clear: both;
 }
 
+@media (max-width: 370px) {
+
+
+	.logo_row,
+	.logo-text,
+	header .right-header,
+	.contact_xs_block {
+		text-align: center;
+	}
+}
+
 header {
 	padding-top: 32px;
 	font-size: 0;
@@ -37,6 +48,14 @@ header {
 	.logo {
 		display: inline-block;
 		vertical-align: middle;
+
+		@media (max-width: 370px) {
+
+			&,
+			&-text {
+				margin-bottom: 15px;
+			}
+		}
 
 		&-text {
 			margin-left: 2%;
@@ -67,6 +86,13 @@ header {
 		display: inline-block;
 		vertical-align: middle;
 
+		@media (max-width: 370px) {
+
+			& {
+				margin-right: 0;
+			}
+		}
+
 		button {
 			width: 166px;
 			height: 35px;
@@ -82,6 +108,13 @@ header {
 	.header-phone {
 		display: inline-block;
 		vertical-align: middle;
+
+		@media (max-width: 370px) {
+
+			& {
+				margin-left: -8%;
+			}
+		}
 
 		svg {
 			margin-right: 14px;
@@ -141,6 +174,10 @@ header {
 				text-transform: uppercase;
 				background-color: transparent;
 				transition: background 300ms linear;
+
+				&.selected {
+					background-color: @dark-blue !important;
+				}
 
 				&:hover {
 					background-color: @dark-blue;
@@ -273,13 +310,23 @@ header {
 						color: @white;
 						text-transform: uppercase;
 					}
+
+					@media (max-width: 370px) {
+
+						& {
+							padding-left: 10px;
+
+							span {
+								font: 17px @pt;
+							}
+						}
+					}
 				}
 
 				&.type-services {
 					padding-left: 40px;
 					padding-bottom: 30px;
 					margin-bottom: 0;
-
 
 					li {
 						padding-left: 60px;
@@ -291,6 +338,14 @@ header {
 						background-size: 30px 32px;
 						background-position: left center;
 						background-repeat: no-repeat;
+
+						@media (max-width: 370px) {
+
+							& {
+								font: 19px @pt;
+								padding-left: 50px;
+							}
+						}
 
 						&:not(:last-child) {
 							margin-bottom: 34px;
@@ -451,6 +506,14 @@ header {
 				height: 1px;
 				background-color: @venzel-color;
 				content: '';
+
+				@media (max-width: 370px) {
+
+					& {
+						right: calc(~'50% - 144px');
+						max-width: 114px;
+					}
+				}
 			}
 
 			@media (min-width: 320px) and (max-width: 767px) {
@@ -782,14 +845,30 @@ header {
 			.item__number {
 
 				span {
+					position: relative;
 					display: inline-block;
 					padding: 0 8px;
-					border-radius: 50%;
-					background-color: @footer;
 					color: @white;
 					font-size: 24px;
 					line-height: 36px;
 					font-weight: 600;
+
+					&::before {
+						position: absolute;
+						z-index: -1;
+						left: 0;
+						top: 0;
+						display: block;
+						width: 100%;
+						height: 100%;
+						background-color: @footer;
+						border-radius: 50%;
+						content: '';
+					}
+
+					&.double {
+						padding: 0 2px;
+					}
 				}
 			}
 
@@ -844,7 +923,7 @@ header {
 				&.active:not(:last-child),
 				&.active:not(:first-child){
 
-					a {
+					span {
 						padding: 0 7px;
 						background-color: @footer;
 						border-radius: 50%;
@@ -1257,6 +1336,43 @@ header {
 		}
 	}
 
+	div.mf-ok-text {
+		color:@white;
+		font-weight:bold;
+		padding-bottom: 1em;
+		text-align: center;
+	}
+
+	input.error-field {
+		border-color: red !important;
+	}
+
+	span.error-label {
+		color: red;
+		font-style: 13px;
+	}
+
+	div.mf-ok-text-question {
+		color:green;
+		font-weight:bold;
+		padding-bottom: 1em;
+	}
+
+	textarea.error-field {
+		border-color: red !important;
+	}
+
+	.preview_picture {
+		max-width: 200px;
+	}
+
+	.container ul {
+		padding-left: 25px;
+		font-size: 16px;
+		line-height: 24px;
+		color: @utp-subtitle;
+	}
+
 }
 
 body {
@@ -1277,6 +1393,10 @@ footer {
 	margin-top: 59px;
 	padding-top: 44px;
 	background-color: @footer;
+
+	#hide_form {
+		display: none;
+	}
 
 	.logo {
 		display: inline-block;
@@ -1314,6 +1434,10 @@ footer {
 				font: 14px/30px @pt;
 				color: @white;
 				text-transform: uppercase;
+
+				&.selected {
+					text-decoration: underline !important;
+				}
 
 				&:hover {
 					color: @white;
